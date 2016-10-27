@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1fa625</color>
+    <color name="colorPrimaryDark">#388e3c</color>
+    <color name="colorAccent">#ffc107</color>
+    <color name="background">#ffffff</color>
+    <!--<color name="background">#d6d6d6</color>-->
+    <color name="text_gray">#c6c6c6</color>
+    <color name="radar_green">#1fa625</color>
+    <color name="friend_blue">#03A9F4</color>
+    <color name="enemy_red">#FF5252</color>
+    <color name="setting_orange">#FF9800</color>
+
+    <color name="press_gray">#666666</color>
+    <color name="list_item_press">#216b74ff</color>
+</resources>

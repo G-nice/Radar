@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:layout_marginBottom="6dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="6dp"
+
+    android:foreground="?attr/selectableItemBackground"
+    android:stateListAnimator="@animator/item_click_raise"
+    app:cardCornerRadius="5dp"
+    app:elevation="10dp"
+    >
+    <!--android:stateListAnimator="@animator/item_click_raise"--> <!-- API21-->
+    <!--android:paddingStart="15dp"-->
+    <!--android:paddingEnd="15dp"-->
+    <!--android:paddingTop="15dp"-->
+    <!--android:paddingBottom="15dp"-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|start"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/circle_label"
+            android:gravity="center"
+            android:maxLines="1"
+            android:minHeight="56dp"
+            android:minWidth="56dp"
+            android:paddingBottom="8dp"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp"
+            android:text="神"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            />
+        <!--android:background="#1fa625"-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="神圣深"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/item_phonenum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="13968536245"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_weight="2"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="2560 KM"
+            android:textColor="@color/friend_blue"
+            android:textSize="24sp"
+            />
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

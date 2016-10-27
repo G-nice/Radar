@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/refresh"
+        android:icon="@mipmap/refresh"
+        android:orderInCategory="100"
+        android:title="refresh"
+        app:showAsAction="ifRoom"/>
+
+    <!-- 子菜单 -->
+    <item
+        android:id="@+id/switch_sort"
+        android:icon="@mipmap/switch_view"
+        android:orderInCategory="100"
+        android:title="changeSort"
+        app:showAsAction="ifRoom">
+
+        <menu>
+
+            <item
+                android:id="@+id/sortby_distance"
+                android:orderInCategory="200"
+                android:title="sort by distance"
+                app:showAsAction="ifRoom"
+                />
+            <!--android:orderInCategory="100"-->
+
+            <item
+                android:id="@+id/sortby_name"
+                android:orderInCategory="200"
+                android:title="sort by name"
+                app:showAsAction="ifRoom"
+                />
+            <!--android:orderInCategory="100"--> <!-- 优先级 -->
+
+        </menu>
+
+
+    </item>
+
+</menu>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_enemy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/enemy_red"
+        android:minHeight="?attr/actionBarSize"
+        android:paddingTop="@dimen/padding_top"
+        app:subtitle="Less enemy"
+        app:subtitleTextColor="@color/text_gray"
+        app:title="Enemy"
+        app:titleTextColor="@android:color/white"
+        >
+    </android.support.v7.widget.Toolbar>
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_enemy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="16dp"
+            android:src="@mipmap/add"
+            app:elevation="6dp"
+            app:layout_anchorGravity="bottom|right|end"
+            app:layout_behavior="com.gnice.radar.UI.ScrollAwareFABBehavior"
+            app:pressedTranslationZ="12dp"
+            />
+        <!--app:layout_anchor="@id/app_bar"-->
+        <!--app:rippleColor="#56abe4"-->
+        <!--app:backgroundTint="#56abe4"-->
+
+
+        <!--由于使用状态栏沉浸效果 fitsSystemWindows=true 会与上面的toolbar重叠 增加一个LinearLayout解决-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleV_enemy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#ffffff"
+            android:dividerHeight="10dp"
+            app:fabSize="normal"
+            >
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</LinearLayout>

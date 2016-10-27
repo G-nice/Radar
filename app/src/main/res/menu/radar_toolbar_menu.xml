@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/refresh"
+        android:icon="@mipmap/refresh"
+        android:orderInCategory="100"
+        android:title="refresh"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/location"
+        android:icon="@mipmap/location"
+        android:orderInCategory="100"
+        android:title="location"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/show_hide_details"
+        android:icon="@mipmap/show"
+        android:orderInCategory="100"
+        android:title="show/hide details"
+        app:showAsAction="ifRoom"/>
+    <!--android:icon="@drawable/hide_show"-->
+    <!--android:icon="@mipmap/show"-->
+
+    <item
+        android:id="@+id/switch_view"
+        android:icon="@mipmap/switch_view"
+        android:orderInCategory="200"
+        android:title="changeView"
+        app:showAsAction="ifRoom"/>
+
+
+</menu>

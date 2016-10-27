@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/setting_orange"
+        android:minHeight="?attr/actionBarSize"
+        android:paddingTop="@dimen/padding_top"
+        app:subtitle=" "
+        app:subtitleTextColor="@color/text_gray"
+        app:title="Settting"
+        app:titleTextColor="@android:color/white"
+        />
+
+    <TextView
+        android:id="@+id/setting_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/setting_orange"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+    <com.gnice.radar.UI.RevealFollowButton
+        android:id="@+id/rfbutton"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="13dp"/>
+
+    <FrameLayout
+        android:id="@+id/preference_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

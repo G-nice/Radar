@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout="@layout/preference_item"
+    android:title="@string/title_activity_setting">
+
+
+    <PreferenceCategory
+        android:title="基本设置">
+        <!--android:layout="@layout/preference_category_widget"-->
+        <SwitchPreference
+            android:icon="@mipmap/ic_launcher"
+            android:key="wifi"
+            android:summaryOff="禁用"
+            android:summaryOn="启用"
+            android:title="WIFI"/>
+
+        <CheckBoxPreference
+            android:key="something"
+            android:summary="仅在Wi-Fi环境下才自动加载图片"
+            android:title="省流量模式"/>
+        <!--android:widgetLayout="@layout/switch_layout"-->
+        <!--android:layout="@layout/preference_item"-->
+        <!--android:key="@string/save_net_mode"-->
+        <Preference
+            android:layout="@layout/preference_item"
+            android:summary="删除已缓存的文章内容及图片"
+            android:title="清空缓存"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:layout="@layout/preference_category_widget"
+        android:title="帮助">
+        <Preference
+            android:title="关于">
+            <!--android:layout="@layout/preference_item"-->
+            <!--<intent-->
+            <!--android:action="android.intent.action.VIEW"-->
+            <!--android:data="http://fir.im/seashell"/>-->
+        </Preference>
+        <Preference
+            android:layout="@layout/preference_item"
+            android:summary="V 1.0"
+            android:title="当前版本"/>
+        <Preference
+            android:layout="@layout/preference_item"
+            android:title="手动检查更新">
+            <!--<intent-->
+            <!--android:action="android.intent.action.VIEW"-->
+            <!--android:data="http://fir.im/seashell"/>-->
+        </Preference>
+        <Preference
+            android:layout="@layout/preference_item"
+            android:summary="博客：http://blog.csdn.net/"
+            android:title="Gnice"/>
+    </PreferenceCategory>
+
+
+</PreferenceScreen>
