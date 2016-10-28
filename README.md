@@ -7,6 +7,8 @@ an app on Android let you share your position with your frineds.
 
 下载 Download
 ----------------
+支持系统: Android 4.2+
+Support:  Android 4.2+
 [Radar.apk](https://github.com/G-nice/Radar/raw/master/app/app-release.apk "download")
 
 
